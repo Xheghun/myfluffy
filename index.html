@@ -30,10 +30,14 @@
             color: white;
         }
 
-        .jumbotron>p>.btn:hover {
+        .btn:hover {
             color: #0275d8;
             border: 1px solid #0275d8;
             background-color: white;
+        }
+
+        .card-text {
+            font-size: small;
         }
     </style>
 
@@ -43,29 +47,104 @@
 <body>
     <header>
         <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                attention to featured content or information.</p>
+            <h1 class="display-1">My Fluffy</h1>
+            <em class="lead">Finding the right companion for you.</em>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.
-            </p>
+            <p>We provide the best pet globally </p>
             <p class="lead">
-                <a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
+                <a class="btn btn-primary btn-md" href="#fluffy" role="button">Learn more</a>
             </p>
         </div>
     </header>
     <main>
         <div id="fluffy">
-            <h4>Our Pets</h4>
-            <div class="row" style="padding: 14px;">
-                <div class="col-md-10">
-                    yo
-                </div>
 
-                <div class="col-md-2">
-                    <div>
-                        <h5>Order By</h5>
-                        <form action="post">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <h4>Our Pets</h4>
+                    <div class="col-lg-9">
+                        <div class="row">
+
+                            <div class="col-sm-3" style="padding-top:10px; padding-bottom:10px;">
+                                <div class="card" style="width: 14rem;">
+                                    <img class="card-img-top"
+                                        src="https://vetwork.co/galaxy/wp-content/uploads/3_husky_howling_3037_3_600.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Siberian husky</h6>
+                                        <p class="card-text">Lorem Ipsum dorem blah blah blah ifkjfdkjfdkjdf
+                                            fdjdfkdfjk</p>
+                                        <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3" style="padding-top:10px; padding-bottom:10px;">
+                                <div class="card" style="width: 14rem;">
+                                    <img class="card-img-top"
+                                        src="https://vetwork.co/galaxy/wp-content/uploads/3_husky_howling_3037_3_600.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Siberian husky</h6>
+                                        <p class="card-text">Lorem Ipsum dorem blah blah blah ifkjfdkjfdkjdf
+                                            fdjdfkdfjk</p>
+                                        <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3" style="padding-top:10px; padding-bottom:10px;">
+                                <div class="card" style="width: 14rem;">
+                                    <img class="card-img-top"
+                                        src="https://vetwork.co/galaxy/wp-content/uploads/3_husky_howling_3037_3_600.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Siberian husky</h6>
+                                        <p class="card-text">Lorem Ipsum dorem blah blah blah ifkjfdkjfdkjdf
+                                            fdjdfkdfjk</p>
+                                        <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3" style="padding-top:10px; padding-bottom:10px;">
+                                <div class="card" style="width: 14rem;">
+                                    <img class="card-img-top"
+                                        src="https://vetwork.co/galaxy/wp-content/uploads/3_husky_howling_3037_3_600.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Siberian husky</h6>
+                                        <p class="card-text">Lorem Ipsum dorem blah blah blah ifkjfdkjfdkjdf
+                                            fdjdfkdfjk</p>
+                                        <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3" style="padding-top:10px; padding-bottom:10px;">
+                                <div class="card" style="width: 14rem;">
+                                    <img class="card-img-top"
+                                        src="https://vetwork.co/galaxy/wp-content/uploads/3_husky_howling_3037_3_600.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Siberian husky</h6>
+                                        <p class="card-text">Lorem Ipsum dorem blah blah blah ifkjfdkjfdkjdf
+                                            fdjdfkdfjk</p>
+                                        <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div>
+                            <h5>Order By</h5>
+                            <form action="post">
                                 <div class="form-check">
                                     <input type="radio" class="form-check-input" name="breed" id="breed">
                                     <label class="form-check-label" for="option1">Breed</label>
@@ -78,12 +157,12 @@
                                     <input type="radio" class="form-check-input" name="price" id="price">
                                     <label class="form-check-label" for="option1">Price</label>
                                 </div>
-                        </form>
-                    
-                        <hr>
-
-                        <h5>Sort By</h5>
-                        <form action="post">
+                            </form>
+    
+                            <hr>
+    
+                            <h5>Sort By</h5>
+                            <form action="post">
                                 <div class="form-check">
                                     <input type="radio" class="form-check-input" name="breed" id="breed">
                                     <label class="form-check-label" for="option1">Breed</label>
@@ -92,10 +171,22 @@
                                     <input type="radio" class="form-check-input" name="name" id="name">
                                     <label class="form-check-label" for="option1">A-Z</label>
                                 </div>
-                        </form>
+                            </form>
+
+                            <hr/>
+
+                            <h5>Quick Actions</h5>
+                            <button type="button" class="btn btn-primary btn-md">
+                               <i class="fas fa-shopping-cart"></i> Checkout
+                              </button>
+
+                        </div>
                     </div>
                 </div>
+
+                
             </div>
+        </div>
         </div>
     </main>
 </body>
