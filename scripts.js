@@ -1,53 +1,53 @@
 var products = [
     {
-      "id": 1001,
-      "title": "Siberian Husky",
-      "description": "The Siberian Husky is a medium-sized working sled dog breed. The breed belongs to the Spitz genetic family. It is recognizable by its thickly furred double coat, erect triangular ears, and distinctive markings, and is smaller than the similar-looking Alaskan Malamute.",
-      "price": 241.00,
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fvetwork.co%2Fgalaxy%2Fen%2Fsiberian-husky-dog-breed-pictures-information%2F&psig=AOvVaw2RkjDjqYHxK62DSN8MxVY6&ust=1615813953343000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiHxp7ur-8CFQAAAAAdAAAAABAD",
-      "availableInventory": 10,
-      "rating": 4
+        "id": 1001,
+        "title": "Siberian Husky",
+        "description": "The Siberian Husky is a medium-sized working sled dog breed. The breed belongs to the Spitz genetic family. It is recognizable by its thickly furred double coat, erect triangular ears, and distinctive markings, and is smaller than the similar-looking Alaskan Malamute.",
+        "price": 241.00,
+        "image": "https://factcity.com/wp-content/uploads/2020/02/facts-about-Siberian-huskies-scaled.jpg",
+        "availableInventory": 10,
+        "rating": 4
     },
     {
-      "id": 1002,
-      "title": "Yarn",
-      "description": "Yarn your cat can play with for a very <strong>long</strong> time!",
-      "price": 2.99,
-      "image": "images/2.jpg",
-      "availableInventory": 7,
-      "rating": 3
+        "id": 1002,
+        "title": "Poodle",
+        "description": "The Poodle is a dog breed that comes in three varieties: Standard Poodle, Miniature Poodle, and Toy Poodle. The breed’s origin is disputed: whether it descends from Germany as a type of water dog, or from the French Barbet",
+        "price": 2.99,
+        "image": "https://poodlereport.com/wp-content/uploads/2019/10/Canva-medium-size-poodle-1024x683.jpg",
+        "availableInventory": 7,
+        "rating": 3
     },
     {
-      "id": 1003,
-      "title": "Kitty Litter",
-      "description": "Premium kitty litter for your cat.",
-      "price": 11.00,
-      "image": "images/3.jpg",
-      "availableInventory": 99,
-      "rating": 4
+        "id": 1003,
+        "title": "German Shepherd",
+        "description": "The German Shepherd is a breed of medium to large-sized working dog that originated in Germany. According to the FCI, the breed's English language name is German Shepherd Dog",
+        "price": 11.00,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg",
+        "availableInventory": 99,
+        "rating": 4
     },
     {
-      "id": 1004,
-      "title": "Cat House",
-      "description": "A place for your cat to play!",
-      "price": 7.99,
-      "image": "images/4.jpg",
-      "availableInventory": 11,
-      "rating": 5
+        "id": 1004,
+        "title": "Golden Retriever",
+        "description": "The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, such as ducks and upland game birds, during hunting and shooting parties. The name \"retriever\" refers to the breed's ability to retrieve shot game undamaged due to their soft mouth.",
+        "price": 7.99,
+        "image": "https://cdn.orvis.com/images/DBS_GoldRetriever_1280.jpg",
+        "availableInventory": 11,
+        "rating": 5
     },
     {
-      "id": 1005,
-      "title": "Laser Pointer",
-      "description": "Drive your cat crazy with this <em>amazing</em> product.",
-      "price": 49.99,
-      "image": "images/5.jpg",
-      "availableInventory": 25,
-      "rating": 4
+        "id": 1005,
+        "title": "Pomeranian",
+        "description": "The Pomeranian is a breed of dog of the Spitz type that is named for the Pomerania region in north-west Poland and north-east Germany in Central Europe. Classed as a toy dog breed because of its small size, the Pomeranian is descended from larger Spitz-type dogs, specifically the German Spitz.",
+        "price": 49.99,
+        "image": "https://vetstreet.brightspotcdn.com/dims4/default/ed14d62/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F58%2F35%2F8cdde1f54ad986b94f1cdfebd990%2Fpomeranian-AP-0BISNY-645sm8513.jpg",
+        "availableInventory": 25,
+        "rating": 4
     }
-  ]
+]
 
 
-  var fluffyApp = new Vue({
-      el: "#fluffy",
+var fluffyApp = new Vue({
+    el: "#fluffy",
 
-  });
+});
