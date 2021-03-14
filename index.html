@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>My Fluffy</title>
 
-
     <style>
         .jumbotron {
             background-image: url("https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Pet-dog-1024x444.jpg");
@@ -153,14 +152,14 @@
                                                         <div class="card-body">
                                                             <h6 class="card-title">{{pet.name}}</h6>
                                                             <div class="row">
-                                                                <div class="col" v-if='pet.count > 0'>
-                                                                    <p class="card-text">Count: {{pet.count}} </p>
+                                                                <div class="col">
+                                                                    <p class="card-text">Price: <b>AED {{pet.price}}</b> </p>
                                                                 </div>
                                                             </div>
                                                             <hr>
                     
-                                                            <button v-if='pet.count > 0' v-on:click="addToCart(pet,index)"
-                                                                class="btn btn-sm btn-primary">Add to Cart</button>
+                                                            <button v-on:click="removeFromCart(index)"
+                                                                class="btn btn-sm btn-primary">Remove</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -186,5 +185,4 @@
     </main>
 </body>
 <script type="text/javascript" src="scripts.js"></script>
-
 </html>

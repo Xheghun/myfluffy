@@ -6,7 +6,8 @@ var pets = [
         "price": 500,
         "image": "https://factcity.com/wp-content/uploads/2020/02/facts-about-Siberian-huskies-scaled.jpg",
         "count": 4,
-        "rating": 4
+        "rating": 4,
+        "cart_amount": 0,
     },
     {
         "id": 1002,
@@ -15,7 +16,8 @@ var pets = [
         "price": 372,
         "image": "https://poodlereport.com/wp-content/uploads/2019/10/Canva-medium-size-poodle-1024x683.jpg",
         "count": 3,
-        "rating": 3
+        "rating": 3,
+        "cart_amount": 0,
     },
     {
         "id": 1003,
@@ -24,7 +26,8 @@ var pets = [
         "price": 126,
         "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg",
         "count": 12,
-        "rating": 4
+        "rating": 4,
+        "cart_amount": 0,
     },
     {
         "id": 1004,
@@ -33,7 +36,8 @@ var pets = [
         "price": 289,
         "image": "https://cdn.orvis.com/images/DBS_GoldRetriever_1280.jpg",
         "count": 6,
-        "rating": 5
+        "rating": 5,
+        "cart_amount": 0,
     },
     {
         "id": 1005,
@@ -43,9 +47,14 @@ var pets = [
         "image": "https://vetstreet.brightspotcdn.com/dims4/default/ed14d62/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F58%2F35%2F8cdde1f54ad986b94f1cdfebd990%2Fpomeranian-AP-0BISNY-645sm8513.jpg",
         "count": 2,
         "rating": 4,
-        orderBy: "",
+        "cart_amount": 0,
     }
 ];
+
+function dismissModal() {
+    var cartContent = document.getElementById('cartContent');
+    bootstrap.Modal.getInstance(cartContent).hide(); 
+}
 
 var fluffyApp = new Vue({
     el: "#fluffy",
@@ -61,6 +70,7 @@ var fluffyApp = new Vue({
         addToCart(pet, index) {
             this.cart.push(pet);
             this.sortedList[index].count--;
+            this.sortedList[index].cart_amount++;
         },
 
         canAdd(pet) {
@@ -72,7 +82,15 @@ var fluffyApp = new Vue({
         },
 
         removeFromCart(index) {
+            --this.pets[index].cart_amount;
+            ++this.pets[index].count;
             this.cart.splice(index, 1);
+
+
+            //dismiss modal when there are no more content in the cart 
+            if (this.cart.length < 1) {
+                dismissModal();
+            }
         }
 
     },
