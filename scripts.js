@@ -62,7 +62,7 @@ var fluffyApp = new Vue({
         storename: 'My Fluffy',
         pets: pets,
         cart: [],
-        sortBy: "",
+        sortBy: "asc",
         orderBy: "name"
     },
     methods: {
