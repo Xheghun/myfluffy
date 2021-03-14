@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>My Fluffy</title>
+
+
+    <style>
+        .jumbotron {
+            background-image: url("https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Pet-dog-1024x444.jpg");
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .jumbotron>h1 {
+            color: white;
+        }
+
+        .jumbotron>p {
+            color: white;
+        }
+
+        .jumbotron>p>.btn:hover {
+            color: #0275d8;
+            border: 1px solid #0275d8;
+            background-color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.
+            </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-md" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div id="fluffy">
+            <h4>Our Pets</h4>
+            <div class="row" style="padding: 14px;">
+                <div class="col-md-10">
+                    yo
+                </div>
+
+                <div class="col-md-2">
+                    <div>
+                        <h5>Order By</h5>
+                        <form action="post">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="breed" id="breed">
+                                    <label class="form-check-label" for="option1">Breed</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="name" id="name">
+                                    <label class="form-check-label" for="option1">Name</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="price" id="price">
+                                    <label class="form-check-label" for="option1">Price</label>
+                                </div>
+                        </form>
+                    
+                        <hr>
+
+                        <h5>Sort By</h5>
+                        <form action="post">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="breed" id="breed">
+                                    <label class="form-check-label" for="option1">Breed</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="name" id="name">
+                                    <label class="form-check-label" for="option1">A-Z</label>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="scripts.js"></script>
+
+</html>
