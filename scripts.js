@@ -82,6 +82,7 @@ var fluffyApp = new Vue({
             this.cart = [];
             dismissModal();
             alert("Your order has been submitted");
+            window.location.replace("index.html");
         },
 
         disablePlaceOrder() {
@@ -93,11 +94,6 @@ var fluffyApp = new Vue({
 
         canAdd(pet) {
             return (pet.count > 0);
-        },
-
-
-        placeOrder() {
-            
         },
 
         hasItem() {
