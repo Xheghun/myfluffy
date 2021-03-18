@@ -82,6 +82,8 @@ var fluffyApp = new Vue({
             this.cart = [];
             dismissModal();
             alert("Your order has been submitted");
+
+            //reload page
             window.location.replace("index.html");
         },
 
