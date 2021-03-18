@@ -56,12 +56,16 @@ function dismissModal() {
     bootstrap.Modal.getInstance(cartContent).hide(); 
 }
 
+
 var fluffyApp = new Vue({
     el: "#fluffy",
     data: {
         storename: 'My Fluffy',
         pets: pets,
         cart: [],
+        phone: "",
+        fullname: "",
+        address: "",
         sortBy: "asc",
         orderBy: "name"
     },
@@ -73,8 +77,27 @@ var fluffyApp = new Vue({
             this.sortedList[index].cart_amount++;
         },
 
+
+        placeOrder() {
+            this.cart = [];
+            dismissModal();
+            alert("Your order has been submitted");
+        },
+
+        disablePlaceOrder() {
+            if(this.fullname === "" || this.phone === "" || this.address === "") 
+                return true;
+            
+            return false;
+        },
+
         canAdd(pet) {
             return (pet.count > 0);
+        },
+
+
+        placeOrder() {
+            
         },
 
         hasItem() {

@@ -18,6 +18,25 @@
     <title>My Fluffy</title>
 
     <style>
+        .card-img-top {
+            height: 160px;
+        }
+
+        /* Remove arrows from nmber input field */
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+
+
         .jumbotron {
             background-image: url("https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Pet-dog-1024x444.jpg");
             background-size: cover;
@@ -68,8 +87,7 @@
                             <div v-for="(pet,index) in sortedList" class="col-md-3 col-sm-12"
                                 style="padding-top:10px; padding-bottom:10px;">
                                 <div class="card">
-                                    <img class="card-img-top" style="height: 160px;" v-bind:src="pet.image"
-                                        alt="Card image cap">
+                                    <img class="card-img-top" v-bind:src="pet.image" alt="Card image cap">
                                     <div class="card-body">
                                         <h6 class="card-title">{{pet.name}}</h6>
                                         <p class="card-text">{{pet.description}}</p>
@@ -133,7 +151,7 @@
                                 <h5>Quick Actions</h5>
                                 <button data-bs-toggle="modal" data-bs-target="#cartContent" type="button"
                                     class="btn btn-primary btn-md">
-                                    <i class="fas fa-shopping-cart"></i> ({{cartCount}}) Checkout
+                                    <i class="fas fa-shopping-cart"></i> ({{cartCount}}) View Cart
                                 </button>
                             </div>
 
@@ -176,36 +194,35 @@
                                         <hr>
                                         <div>
                                             <div class="container">
-                                                <form>
                                                     <div class="mb-3">
-                                                        <label for="formGroupExampleInput" class="form-label">Fullname</label>
-                                                        <input type="text" class="form-control"
-                                                            id="formGroupExampleInput"
-                                                            placeholder="John Doe">
+                                                        <label for="formGroupExampleInput"
+                                                            class="form-label">Fullname</label>
+                                                        <input type="text" v-model="fullname" class="form-control"
+                                                            id="formGroupExampleInput" placeholder="John Doe">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="formGroupExampleInput2" class="form-label">Phone</label>
-                                                        <input type="phone" class="form-control"
-                                                            id="formGroupExampleInput2"
-                                                            placeholder="+971 3663 838 73">
+                                                        <label for="formGroupExampleInput2"
+                                                            class="form-label">Phone</label>
+                                                        <input type="number" v-model="phone" class="form-control"
+                                                            id="formGroupExampleInput2" placeholder="+971 3663 838 73">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="formGroupExampleInput3" class="form-label">Address</label>
-                                                        <input type="phone" class="form-control"
-                                                            id="formGroupExampleInput3"
-                                                            placeholder="address">
+                                                        <label for="formGroupExampleInput3"
+                                                            class="form-label">Address</label>
+                                                        <input type="phone" v-model="address" class="form-control"
+                                                            id="formGroupExampleInput3" placeholder="address">
                                                     </div>
-                                                </form>
-
                                                 <button type="button" class="btn btn-secondary btn-sm"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                                                    data-bs-dismiss="modal">Close</button>
+                                                    
+                                                <button v-on:click="placeOrder()"  :disabled="disablePlaceOrder()"
+                                                    class="btn btn-primary btn-sm">Place
+                                                    Order</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
 
 
                         </div>
